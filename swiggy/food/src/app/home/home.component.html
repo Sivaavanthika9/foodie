@@ -1,13 +1,13 @@
 <div class="sc-aXZVg bwoZPF title">
     <b><h1>What's on your mind?</h1></b>
+    <!-- <div  id="demo" class="container-fluid">
+      <form [formGroup]="searchForm">
+          <input type="text" formControlName="searchText" class="_2FkHZ" (keyup)="onSearchTextChange($event)" placeholder="Find your Meal">
+      </form>
+      <div *ngIf="searchedData">
+        </div> -->
   </div>
   <div id="div1">
-    <div  id="demo" class="container-fluid">
-        <form [formGroup]="searchForm">
-            <input type="text" formControlName="searchText" class="_2FkHZ" (keyup)="onSearchTextChange($event)" placeholder="Find your Meal">
-        </form>
-        <div *ngIf="searchedData">
-          </div>
         <!-- <div *ngIf="searchedData.length > 0"> -->
             <!-- <h2>Search Results:</h2> -->
             <div class="card-container">
@@ -28,7 +28,7 @@
         <!-- <div *ngIf="searchComplete && Admins && Admins.length = 0">
             <p>No results found.</p>
         </div> -->
-      </div>
+      <!-- </div> -->
   <div id="div1">
       <div id="demo" class="container-fluid">
         <div *ngFor="let e of Admins" (mousedown)="openBootstrapModal(e)">
@@ -43,5 +43,5 @@
         </div>
       </div>
     </div>
-    
+
     
