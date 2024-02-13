@@ -4,11 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SigninComponent } from './signin/signin.component';
+// import { SigninComponent } from './signin/signin.component';
 import { CartComponent } from './cart/cart.component';
 import { NavComponent } from './nav/nav.component';
 import { SearchComponent } from './search/search.component';
-import { UserLoginComponent } from './user-login/user-login.component';
+//import { UserLoginComponent } from './user-login/user-login.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { RestListComponent } from './rest-list/rest-list.component';
@@ -19,20 +19,24 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './material.module';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-// import { Routes, RouterModule, Router, ROUTES } from '@angular/router';
+import { Routes, RouterModule, Router, ROUTES } from '@angular/router';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SigninComponent,
+    //SigninComponent,
     CartComponent,
     NavComponent,
     SearchComponent,
-    UserLoginComponent,
+    //UserLoginComponent,
     HomeComponent,
     AdminComponent,
     RestListComponent,
     EditAdminComponent,
-    BootstrapmodalComponent
+    BootstrapmodalComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
@@ -41,8 +45,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     BrowserAnimationsModule,
     AngularMaterialModule,
     FormsModule,
-    // Router,RouterModule,
-    ReactiveFormsModule,ModalModule.forRoot()
+    //Router,RouterModule,
+    ReactiveFormsModule,ModalModule.forRoot(),
+    BrowserModule
   ],
   exports: [],
   providers: [
